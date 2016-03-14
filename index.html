@@ -2,22 +2,109 @@
 layout: default
 ---
 
-<div class="home">
+<div id="content" class="home site-content">
 
-  <h1 class="page-heading">Posts</h1>
+  <section id="hero-unit">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Powerful WordPress plugins for developers, designers and
+            marketers.</h2>
+          <p class="text-center"><a href="/plugins" class="btn btn-lg btn-ghost">Let's see them</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <section id="things-we-build">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center">Things We Build</h3>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                <div class="col-md-6 col-sm-6 card text-center" id="facebook-analytics">
+                    <a href="/plugins/facebook-analytics">
+                        <div class="inner">
+                            <h3>
+                                <i class="material-icons">multiline_chart</i>
+                                Facebook Analytics
+                            </h3>
+                            <p class="description">Track Facebook likes, shares via Google Analytics</p>
+                        </div>
+                    </a>
+                </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                <div class="col-md-6 col-sm-6 card text-center" id="get-facebook-likes">
+                    <a href="/plugins/get-facebook-likes">
+                        <div class="inner">
+                            <h3>
+                                <i class="material-icons">thumbs_up_down</i>
+                                Get Facebook Likes
+                            </h3>
+                            <p class="description">Ultimate Marketing Tool for WordPress</p>
+                        </div>
+                    </a>
+                </div>
 
-</div>
+                <div class="col-lg-4 col-sm-6 card text-center" id="wp-ultimate-demo">
+                    <a href="http://codecanyon.net/item/wp-ultimate-demo-seamless-wordpress-demo-plugin/14240690?ref=Binaty">
+                        <div class="inner">
+                            <h3>
+                                <i class="material-icons">history</i>
+                                WP Ultimate Demo
+                            </h3>
+                            <p class="description">Seamless WordPress Demo Plugin</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 card text-center" id="meta-box-conditional-logic">
+                    <a href="https://metabox.io/plugins/meta-box-conditional-logic/">
+                        <div class="inner">
+                            <h3>
+                                <i class="material-icons">swap_horiz</i>
+                                Meta Box Conditional Logic
+                            </h3>
+                            <p class="description">Show/Hide Meta Box, Fields, or any HTML elements with ease</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 card text-center" id="meta-box-builder">
+                    <a href="https://metabox.io/plugins/meta-box-builder/">
+                        <div class="inner">
+                            <h3>
+                                <i class="material-icons">brush</i>
+                                Meta Box Builder
+                            </h3>
+                            <p class="description">Drag and Drop to create WP Meta Boxes</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">About Binaty</h3>
+                    <p>We are passionate about developing cool stuff which help you save times and avoid headaches. We put almost time and energy to bring joyful to you, and for us too.</p>
+                </div>
+            </div>
+        </div>
+    </section><!--#about-->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p>When you want to build custom app/plugin or just a chat</p>
+                    <p><a href="mailto:hello@binaty.org">hello@binaty.org</a></p>
+                </div>
+            </div>
+        </div>
+    </section><!--#contact-->
+
+</div><!--#content-->

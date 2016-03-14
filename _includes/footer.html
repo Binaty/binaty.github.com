@@ -1,38 +1,16 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <ul class="hidden-sm hidden-xs list-inline pull-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/plugins">Plugins</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div class="site-info">
+        Copyright &copy; 2016 <a href="https://binaty.org">Binaty</a>
+      </div><!-- .site-info -->
     </div>
-
   </div>
-
-</footer>
+</footer><!-- #colophon -->
