@@ -1,5 +1,26 @@
 ---
-layout: default
+layout: products
+title: Plugins
+description: Our WordPress Plugins Collection
 ---
 
-Hello
+{% for plugin in site.plugins limit:10 %}
+    <div class="row plugin">
+		<div class="col-md-6 plugin-description">
+			<h2 class="plugin-title"><a href="{{ plugin.link }}">{{ plugin.title }}</a></h2>
+			<p>{{ plugin.description }}</p>
+			<a href="{{ plugin.link }}" class="btn btn-primary btn-lg btn-cta">Get {{ plugin.title }}</a>
+		</div>
+
+		<div class="col-md-6 plugin-image">
+			<div class="browser">
+				<header class="address-bar">
+					<address><a href="{{ plugin.link }}">{{ plugin.link }}</a></address>
+				</header>
+				<section class="browser-content">
+					<a href="{{ plugin.link }}" title="{{ plugin.title }}"><img src="{{ plugin.thumbnail-path }}" alt="{{ plugin.title }}" class="landscape thumbnail full" width="538" height="400" itemprop="image"></a>				
+				</section>
+			</div>
+		</div>
+	</div>
+{% endfor %}

@@ -374,7 +374,7 @@ object {
     display: block;
 }
 
-body.default{
+.default{
     background: url('/img/bg.jpg') no-repeat;
     background-size: contain;
 }
@@ -406,18 +406,28 @@ h1, h2, h3 {
     border-bottom: none !important;
 }
 
+
 .page-heading{
     color: #fff;
     padding: 50px 0;
     background: #009688;
 }
 
-.doc-list{
-    padding-top: 30px;
+.products {
+    .page-heading {
+        background: #AD1457;
+    }
+    .plugin:nth-child(even) .plugin-description{
+        float: right;
+    }
 }
 
-.doc-list .doc-title{
-    color: #333;
+.doc-list{
+    padding-top: 30px;
+
+    .doc-title{
+        color: #333;
+    }
 }
 
 .entry-date{
@@ -425,9 +435,7 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
-.category-plugins .page-heading{
-    background: #AD1457;
-}
+
 .category-blog .page-heading{
     background: #8BC34A
 }
